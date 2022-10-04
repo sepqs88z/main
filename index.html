@@ -1,0 +1,2651 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blanchard</title>
+  <!-- <link rel="icon" href="img/favicon.svg" type="svg"> -->
+  <link type="image/x-icon" href="./img/favicon.svg" rel="shortcut icon">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"> <!-- css scrollbar -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> <!-- css swiper -->
+  <link rel="stylesheet" href="css/choices.min.css"> <!-- css select -->
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css">
+  <link rel="stylesheet" href="css/normalize.css"> <!-- css для кроссбраузерного адаптива -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="header-top">
+
+      <div class="header-top__container container">
+
+        <button class="header-top__burger-btn-open">
+          <svg class="burger-svg-open" width="36" height="29" viewbox="0 0 36 29" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white" />
+            <path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white" />
+            <path d="M24 25.0479H0V28.7H24V25.0479Z" fill="white" />
+          </svg>
+          <svg class="burger-svg-open-mini" width="25" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_191243_1214)">
+              <rect width="25" height="2" transform="matrix(-1 0 0 1 25 0)" fill="white" />
+              <path d="M16 8H5.06639e-07V10H16V8Z" fill="white" />
+              <path d="M10 16H0V18H10V16Z" fill="white" />
+            </g>
+          </svg>
+        </button>
+
+        <nav class="header-top__burger-nav header-burger">
+
+          <button class="header-top__burger-btn-close">
+            <svg class="burger-svg-close" width="29" height="29" viewbox="0 0 29 29" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect x="2.63672" width="37.2838" height="3.72838" transform="rotate(45 2.63672 0)" fill="white" />
+              <rect y="26.3636" width="37.2838" height="3.72838" transform="rotate(-45 0 26.3636)" fill="white" />
+            </svg>
+          </button>
+
+          <ul class="header-burger__list">
+
+            <li class="header-burger__item">
+              <a class="header-burger__link" href="#about">О&nbsp;нас</a>
+            </li>
+
+            <li class="header-burger__item">
+              <a class="header-burger__link" href="#gallery">Галерея</a>
+            </li>
+
+            <li class="header-burger__item">
+              <a class="header-burger__link" href="#catalog">Каталог</a>
+            </li>
+
+            <li class="header-burger__item">
+              <a class="header-burger__link" href="#developments">События</a>
+            </li>
+
+            <li class="header-burger__item">
+              <a class="header-burger__link" href="#projects">Проекты</a>
+            </li>
+
+            <li class="header-burger__item">
+              <a class="header-burger__link" href="#contacts">Контакты</a>
+            </li>
+
+            <li class="header-burger__item-enter">
+              <a class="header-burger__link-enter" href="#">
+                <svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+                    fill="white" />
+                </svg>
+                <span class="header-burger__desc-enter">Войти</span>
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <div class="header-top__content">
+
+          <a class="header-top__logo logo" href="#">
+            <img class="logo__img" src="img/logo.svg" alt="logo">
+            <img class="logo__img-desc" src="img/logo-desc.svg" alt="logo desc">
+          </a>
+
+          <nav class="header-top__nav nav">
+
+            <ul class="nav__list">
+
+              <li class="nav__item">
+                <a class="nav__link" href="#about">О&nbsp;нас</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#gallery">Галерея</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#catalog">Каталог</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#developments">События</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#projects">Проекты</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#contacts">Контакты</a>
+              </li>
+
+            </ul>
+
+          </nav>
+
+        </div>
+
+        <a class="header-top__enter" href="#">
+          <svg class="header-top__svg-enter" width="13" height="13" viewbox="0 0 13 13" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+              fill="white" />
+          </svg>
+          <span class="header-top__enter-desc">Войти</span>
+        </a>
+
+        <button class="header-top__search-btn-open">
+          <svg class="header-top__search-btn-open-svg" width="30" height="29" viewbox="0 0 30 29" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="9.15446" height="2.28862"
+              transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
+              fill="white" />
+          </svg>
+        </button>
+
+        <nav class="header-top__search-nav header-search">
+
+          <form class="header-search__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+
+            <button class="header-search__btn-search">
+              <svg class="header-search__btn-search-svg" width="30" height="29" viewbox="0 0 30 29" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="9.15446" height="2.28862"
+                  transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
+                  fill="white" />
+              </svg>
+            </button>
+
+            <input class="header-search__input" id="search-tablet" name="search" type="search" required>
+
+            <button class="header-search__btn-close">
+              <svg class="header-search__btn-close-svg" width="23" height="23" viewbox="0 0 23 23" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="29.567" height="2.9567" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09375 0)"
+                  fill="white" />
+                <rect width="29.567" height="2.9567" transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 20.9074)"
+                  fill="white" />
+              </svg>
+            </button>
+
+          </form>
+
+        </nav>
+
+      </div>
+
+    </div>
+
+    <div class="header-bottom">
+
+      <div class="header-bottom__container container">
+
+        <nav class="header-bottom__nav nav">
+
+          <ul class="nav__list">
+
+            <li class="nav__item">
+
+              <button class="nav__button nav__button-realism">Реализм</button>
+
+              <!-- размеры и свойства открывающегося меню снизу -->
+              <div class="nav__dropdown dropdown">
+
+                <!-- поле видимости контента внутри + контейнер для скролла -->
+                <div class="dropdown__simplebar">
+
+                  <ul class="dropdown__list">
+
+                    <li class="dropdown__item realism-bgd-1">
+                      <a class="dropdown__link" href="#realism-1">Тинторетто</a>
+                    </li>
+
+                    <li class="dropdown__item realism-bgd-2">
+                      <a class="dropdown__link" href="#realism-2">Фридрих</a>
+                    </li>
+
+                    <li class="dropdown__item realism-bgd-3">
+                      <a class="dropdown__link" href="#realism-3">Леонардо</a>
+                    </li>
+
+                    <li class="dropdown__item realism-bgd-4">
+                      <a class="dropdown__link" href="#realism-4">Верроккьо</a>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="nav__item">
+
+              <button class="nav__button">Импрессионизм</button>
+
+              <div class="nav__dropdown dropdown">
+
+                <div class="dropdown__simplebar">
+
+                  <ul class="dropdown__list">
+
+                    <li class="dropdown__item impressionism-bgd-1">
+                      <a class="dropdown__link" href="#impressionism-1">Моне</a>
+                    </li>
+
+                    <li class="dropdown__item impressionism-bgd-2">
+                      <a class="dropdown__link" href="#impressionism-2">Сислей</a>
+                    </li>
+
+                    <li class="dropdown__item impressionism-bgd-3">
+                      <a class="dropdown__link" href="#impressionism-3">Мане</a>
+                    </li>
+
+                    <li class="dropdown__item impressionism-bgd-4">
+                      <a class="dropdown__link" href="#impressionism-4">Ренуар</a>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="nav__item">
+
+              <button class="nav__button">Постимпрессионизм</button>
+
+              <div class="nav__dropdown dropdown">
+
+                <div class="dropdown__simplebar">
+
+                  <ul class="dropdown__list">
+
+                    <li class="dropdown__item post-impressionism-bgd-1">
+                      <a class="dropdown__link" href="#post-impressionism-1">Ван Гог</a>
+                    </li>
+
+                    <li class="dropdown__item post-impressionism-bgd-2">
+                      <a class="dropdown__link" href="#post-impressionism-2">Сезанн</a>
+                    </li>
+
+                    <li class="dropdown__item post-impressionism-bgd-3">
+                      <a class="dropdown__link" href="#post-impressionism-3">Гоген</a>
+                    </li>
+
+                    <li class="dropdown__item post-impressionism-bgd-4">
+                      <a class="dropdown__link" href="#post-impressionism-4">Сёра</a>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="nav__item">
+
+              <button class="nav__button">Авангард</button>
+
+              <div class="nav__dropdown dropdown">
+
+                <div class="dropdown__simplebar">
+
+                  <ul class="dropdown__list">
+
+                    <li class="dropdown__item vanguard-bgd-1">
+                      <a class="dropdown__link" href="#vanguard-1">Кандинский</a>
+                    </li>
+
+                    <li class="dropdown__item vanguard-bgd-2">
+                      <a class="dropdown__link" href="#vanguard-2">Маринетти</a>
+                    </li>
+
+                    <li class="dropdown__item vanguard-bgd-3">
+                      <a class="dropdown__link" href="#vanguard-3">Малевич</a>
+                    </li>
+
+                    <li class="dropdown__item vanguard-bgd-4">
+                      <a class="dropdown__link" href="#vanguard-4">Пикассо</a>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="nav__item">
+
+              <button class="nav__button">Футуризм</button>
+
+              <div class="nav__dropdown dropdown">
+
+                <div class="dropdown__simplebar">
+
+                  <ul class="dropdown__list">
+
+                    <li class="dropdown__item futurism-bgd-1">
+                      <a class="dropdown__link" href="#futurism-1">Карра</a>
+                    </li>
+
+                    <li class="dropdown__item futurism-bgd-2">
+                      <a class="dropdown__link" href="#futurism-2">Прателла</a>
+                    </li>
+
+                    <li class="dropdown__item futurism-bgd-3">
+                      <a class="dropdown__link" href="#futurism-3">Северини</a>
+                    </li>
+
+                    <li class="dropdown__item futurism-bgd-4">
+                      <a class="dropdown__link" href="#futurism-4">Балла</a>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <form class="header-bottom__search search" action="https://jsonplaceholder.typicode.com/posts" method="post">
+
+          <button class="search__button">
+            <svg width="23" height="22" viewbox="0 -2 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="6.8678" height="1.71695"
+                transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.0967 18C7.53016 18 3.99668 14.3229 3.99668 10C3.99668 5.67715 7.53016 2 12.0967 2C16.6632 2 20.1967 5.67715 20.1967 10C20.1967 14.3229 16.6632 18 12.0967 18ZM12.0967 20C6.57383 20 2.09668 15.5228 2.09668 10C2.09668 4.47715 6.57383 0 12.0967 0C17.6195 0 22.0967 4.47715 22.0967 10C22.0967 15.5228 17.6195 20 12.0967 20Z"
+                fill="white" />
+            </svg>
+          </button>
+
+          <input class="search__input" id="search" name="search" type="search" required
+            placeholder="Поиск по&nbsp;сайту">
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <section id="hero" class="hero">
+
+      <div class="hero__container container">
+
+        <div class="hero__content">
+
+          <h1 class="hero__title">
+            Прикоснитесь к&nbsp;прекрасному
+          </h1>
+
+          <p class="hero__desc">
+            Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки
+            для новых предложений
+          </p>
+
+          <a class="hero__link" href="#map">
+            Подписаться на&nbsp;рассылку
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="swiper hero__swiper">
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide swiper__bgd swiper__bgd-1"></div>
+
+          <div class="swiper-slide swiper__bgd swiper__bgd-2"></div>
+
+          <div class="swiper-slide swiper__bgd swiper__bgd-3"></div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="about" class="about">
+
+      <div class="about__container container">
+
+        <h2 class="about__title">
+          О&nbsp;нас
+        </h2>
+
+        <p class="about__desc">
+          Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого
+          участника как способного принимать собственные решения касаемо распределения внутренних резервов
+          и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечёт
+          за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что
+          высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план
+          целого
+          ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов.
+          В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность
+          среди определённых слоёв населения, а&nbsp;значит, должны быть разоблачены.
+        </p>
+
+      </div>
+
+    </section>
+
+    <section id="gallery" class="gallery">
+
+      <div class="gallery__container container">
+
+        <div class="gallery__content">
+
+          <h2 class="gallery__title">
+            Галерея
+          </h2>
+
+          <p class="gallery__desc">
+            Фильтр:
+          </p>
+
+          <div class="gallery__select">
+
+            <select class="select" name="painting" id="painting">
+
+              <option value="Живопись">Живопись</option>
+
+              <option value="Рисунок">Рисунок</option>
+
+              <option value="Скульптура">Скульптура</option>
+
+            </select>
+
+          </div>
+
+          <div class="gallery__checkbox">
+
+            <label class="gallery__label">
+              <input class="gallery__check" id="XIXcentury" type="checkbox">
+              <span class="gallery__visible-checkbox"></span>
+              <span class="gallery__text">XIX век</span>
+            </label>
+
+            <label class="gallery__label">
+              <input class="gallery__check" id="XXcentury" type="checkbox">
+              <span class="gallery__visible-checkbox"></span>
+              <span class="gallery__text">XX век</span>
+            </label>
+
+            <label class="gallery__label">
+              <input class="gallery__check" id="modernity" type="checkbox">
+              <span class="gallery__visible-checkbox"></span>
+              <span class="gallery__text">Современность</span>
+            </label>
+
+          </div>
+
+        </div>
+
+        <div class="gallery__slide slide">
+
+          <div class="slide__nav nav">
+
+            <button class="nav__back nav-btn" aria-label="К предыдущему слайду"></button>
+            <div class="nav__pagination"></div>
+            <button class="nav__next nav-btn" aria-label="К следующему слайду"></button>
+
+          </div>
+
+          <div class="swipers swiper-container slides-container slide__gallery">
+
+            <div class="swiper-wrapper">
+
+              <a class="swiper-slide slide__swiper" href="#">
+                <picture>
+                  <source srcset="img/gallery-bgd-tablet-1.jpg" media="(max-width: 1024px)">
+                  <img class="slide__img" src="img/gallery-bgd-1.jpg" alt="slide-gallery-1">
+                </picture>
+              </a>
+
+              <a class="swiper-slide slide__swiper" href="#">
+                <picture>
+                  <source srcset="img/gallery-bgd-tablet-2.jpg" media="(max-width: 1024px)">
+                  <img class="slide__img" src="img/gallery-bgd-2.jpg" alt="slide-gallery-2">
+                </picture>
+              </a>
+
+              <a class="swiper-slide slide__swiper" href="#">
+                <picture>
+                  <source srcset="img/gallery-bgd-tablet-3.jpg" media="(max-width: 1024px)">
+                  <img class="slide__img" src="img/gallery-bgd-3.jpg" alt="slide-gallery-3">
+                </picture>
+              </a>
+
+              <a class="swiper-slide slide__swiper" href="#">
+                <picture>
+                  <source srcset="img/gallery-bgd-tablet-4.jpg" media="(max-width: 1024px)">
+                  <img class="slide__img" src="img/gallery-bgd-4.jpg" alt="slide-gallery-4">
+                </picture>
+              </a>
+
+              <a class="swiper-slide slide__swiper" href="#">
+                <picture>
+                  <source srcset="img/gallery-bgd-tablet-5.jpg" media="(max-width: 1024px)">
+                  <img class="slide__img" src="img/gallery-bgd-5.jpg" alt="slide-gallery-5">
+                </picture>
+              </a>
+
+              <a class="swiper-slide slide__swiper" href="#">
+                <picture>
+                  <source srcset="img/gallery-bgd-tablet-6.jpg" media="(max-width: 1024px)">
+                  <img class="slide__img" src="img/gallery-bgd-6.jpg" alt="slide-gallery-6">
+                </picture>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="catalog" class="catalog">
+
+      <div class="catalog__container container">
+
+        <div class="catalog__content">
+
+          <h2 class="catalog__title">
+            Каталог
+          </h2>
+
+          <p class="catalog__desc">
+            Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
+            политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Являясь всего
+            лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии
+            и&nbsp;по&nbsp;сей
+            день остаются уделом либералов, которые жаждут быть функционально разнесены на&nbsp;независимые элементы.
+          </p>
+
+        </div>
+
+        <!-- для разделения на правую и левую часть контента -->
+        <div class="catalog__wrraper js-tabs-wrap">
+
+          <!-- левый контейнер для табов / и с информацией о разных художниках -->
+          <div class="catalog__tab">
+
+            <!-- 1 таб ниже 2 . 3 и так делие ...
+            - это контрейнер для карточек 
+            - табы . связанные каждая через data-target для каждого автора свой -->
+            <div class="catalog__painter-info active js-tab-content" data-target="domenico">
+
+              <!-- карточка автора -->
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-bgd.jpg" alt="domenico">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Доменико Гирландайо
+                    </cite>
+
+                    <div class="after__date">
+                      2&nbsp;июня 1448&ndash;11 января 1494
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии,
+                  которую продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный
+                  Микеланджело в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов,
+                  в&nbsp;которых
+                  выпукло, со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей
+                  (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции в&nbsp;костюмах того времени).
+                </p>
+
+              </div>
+
+            </div>
+
+            <!-- 2 таб  -->
+            <div class="catalog__painter-info  js-tab-content" data-target="benedetto">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="benedetto">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Бенедетто ди&nbsp;Биндо
+                    </cite>
+
+                    <div class="after__date">
+                      1380&nbsp;г. &mdash;&nbsp;1417&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Бенедетто ди&nbsp;Биндо остался в&nbsp;истории искусства как сиенский художник, так сказать,
+                  &laquo;второго ряда&raquo;,
+                  несмотря на&nbsp;то, что за&nbsp;свою короткую жизнь он&nbsp;выполнил ряд весьма престижных заказов,
+                  включая работы
+                  в&nbsp;Сиенском соборе (работы в&nbsp;главном соборе республики второстепенным художникам
+                  не&nbsp;поручались).
+                  Обучение он&nbsp;прошёл у&nbsp;Таддео ди&nbsp;Бартоло, крупного сиенского мастера поздней готики,
+                  в&nbsp;боттеге
+                  которого Бенедетто трудился вместе с&nbsp;Грегорио ди&nbsp;Чекко. Наибольшее влияние на&nbsp;его
+                  творчество оказали
+                  работы Симоне Мартини, в&nbsp;частности в&nbsp;выборе колорита, а&nbsp;тонко проработанные лица его
+                  персонажей
+                  напоминают произведения Джованни да&nbsp;Милано.
+                </p>
+
+              </div>
+
+            </div>
+
+            <!-- 3 таб -->
+            <div class="catalog__painter-info  js-tab-content" data-target="bergognone">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="bergognone">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Бергоньоне, Амброджо
+                    </cite>
+
+                    <div class="after__date">
+                      1453&nbsp;г. &mdash;&nbsp;1523&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Прозвище говорит о&nbsp;его тяготении к&nbsp;бургундской школе, по&nbsp;манере ему близок Винченцо
+                  Фоппа. Испытал
+                  влияние Леонардо да&nbsp;Винчи. Наиболее известен работами 1486&ndash;1494&nbsp;в монастырской обители
+                  картезианцев
+                  Чертоза ди&nbsp;Павия. Позднее работал в&nbsp;Милане в&nbsp;базилике Сант-Эусторджо и&nbsp;церкви
+                  Сан-Сатиро, после 1497
+                  &mdash;&nbsp;в&nbsp;Лоди, в&nbsp;1512&nbsp;&mdash; в&nbsp;Бергамо, незадолго
+                  до&nbsp;смерти&nbsp;&mdash; снова в&nbsp;Милане, в&nbsp;базилике Сан-Симпличано.
+                  Его завещание датировано 4&nbsp;апреля 1523, в&nbsp;том&nbsp;же году он&nbsp;умер. Одним из&nbsp;его
+                  учеников считают
+                  Бернардино Луини.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="catalog__painter-info  js-tab-content" data-target="bissolo">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="bissolo">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Биссоло, Франческо
+                    </cite>
+
+                    <div class="after__date">
+                      1472&nbsp;г. &mdash;&nbsp;1554&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Сын художника. Ученик Джованни Беллини. С&nbsp;1490 переехал в&nbsp;мастерскую Беллини. С&nbsp;1492
+                  по&nbsp;1530 год
+                  работал в&nbsp;Венеции. Помогал учителю в&nbsp;работе над украшением Большого зала Совета Дворца дожей
+                  (Венеция). Принимал участие в&nbsp;создании украшений Церкви Иль Реденторе в&nbsp;Венеции.
+                  Художник эпохи Возрождения.
+                  В&nbsp;своём творчестве подражал Джорджоне.
+                  Работы художника хранятся ныне во&nbsp;многих музеях мира. В&nbsp;санкт-петербургском Эрмитаже
+                  находится его
+                  картина &laquo;Богоматерь с&nbsp;Младенцем Христом&raquo;. В&nbsp;Британской Национальной
+                  галерее&nbsp;&mdash; &laquo;Мадонна с&nbsp;Младенцем
+                  со&nbsp;святыми и&nbsp;донатором&raquo;. Ряд его полотен находится в&nbsp;музеях Варшавы,
+                  Лос-Анджелеса (Музей Нортона
+                  Саймона и&nbsp;Los Angeles County Museum of&nbsp;Art), Дэйтоновском институте искусств (штат Огайо,
+                  США) и&nbsp;др.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="catalog__painter-info  js-tab-content" data-target="boltraffio">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="boltraffio">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Больтраффио, Джованни
+                    </cite>
+
+                    <div class="after__date">
+                      1467&nbsp;г. &mdash;&nbsp;1516&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Вазари сообщает, что художник происходил из&nbsp;аристократической семьи. Воспитанный в&nbsp;традициях
+                  Фоппы,
+                  Бернардо Дзенале и&nbsp;Амброджо Бергоньоне, он&nbsp;прошёл обучение в&nbsp;мастерской Леонардо. Его
+                  первое
+                  произведение &laquo;Воскресение Христа, святой Леонард и&nbsp;святая Лючия&raquo; выполнено
+                  в&nbsp;1491 году совместно с
+                  Марко д&rsquo;Оджоно для миланской церкви Сан-Джованни-сул-Муро. Был придворным художником Лодовико
+                  Моро и
+                  славился своими психологическими портретами.
+                  Больтраффио умер в&nbsp;возрасте 49&nbsp;лет и&nbsp;был похоронен на&nbsp;кладбище церкви Св. Паулы
+                  в&nbsp;Комито.
+                  Историки искусства предполагают, что фигура Младенца на&nbsp;картине Леонардо да&nbsp;Винчи
+                  &laquo;Мадонна Литта&raquo;
+                  принадлежит кисти Джованни Антонио Больтраффио. Известны подготовительные рисунки Больтраффио, в
+                  точности воспроизводящие эту фигуру.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="catalog__painter-info  js-tab-content" data-target="bonsignori">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="bonsignori">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Бонсиньори, Франческо
+                    </cite>
+
+                    <div class="after__date">
+                      1460&nbsp;г. &mdash;&nbsp;1519&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Родился около 1460 года в&nbsp;Вероне в&nbsp;семье художника Альберто Бонсиньори. Обучался живописи в
+                  мастерской Франческо Бенальо. В&nbsp;1480 году переехал из&nbsp;Вероны в&nbsp;Венецию, где жил
+                  до&nbsp;1487&nbsp;года. В
+                  ранний период творчества находился под влиянием венецианской живописной школы. Особенное впечатление
+                  на&nbsp;Бонсиньори оказало творчество Антонелло да&nbsp;Мессины, Джованни Беллини, Чима
+                  да&nbsp;Конельяно и&nbsp;Альвизе
+                  Виварини.
+                  Среди известных творений этого периода самыми ранними произведениями художника являются полотна
+                  &laquo;Мадонна со&nbsp;спящим младенцем&raquo; 1483 года и&nbsp;&laquo;Алтарь Даль Бово&raquo;, или
+                  &laquo;Мадонна на&nbsp;троне с&nbsp;предстоящими
+                  святыми и&nbsp;донатором Альтабеллой Авогадро&raquo; 1484&nbsp;года, которые ныне входят
+                  в&nbsp;собрание Общественного
+                  музея Вероны.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="catalog__painter-info  js-tab-content" data-target="botticini">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="botticini">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Боттичини, Рафаэлло
+                    </cite>
+
+                    <div class="after__date">
+                      1477&nbsp;г. &mdash;&nbsp;1520&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Рафаэлло принадлежал к&nbsp;флорентийской артистической династии&nbsp;&mdash; его дед, Джованни
+                  ди&nbsp;Доменико, был
+                  известен как художник, расписывавший игральные карты (хотя учёные не&nbsp;исключают, что он&nbsp;мог
+                  заниматься и&nbsp;более серьёзной живописью); его отец&nbsp;&mdash; Франческо ди&nbsp;Джованни, был
+                  известным
+                  флорентийским мастером. Первые художественные навыки Рафаэлло получил в&nbsp;мастерской отца;
+                  с&nbsp;этой
+                  мастерской связан и&nbsp;ранний период его творчества. В&nbsp;1490-е годы, когда формировался
+                  художественный
+                  вкус Рафаэлло, мастерская его отца занималась в&nbsp;основном исполнением заказов
+                  в&nbsp;провинциальных
+                  городках в&nbsp;окрестностях Флоренции. В&nbsp;1498 году Франческо Боттичини скончался, Рафаэлло
+                  унаследовал
+                  мастерскую и&nbsp;продолжил работать в&nbsp;провинции. По&nbsp;мнению исследователей его творчества,
+                  это был
+                  художник скромного дарования, никогда не&nbsp;стремившийся завоевать высоких позиций
+                  в&nbsp;интеллектуальном и
+                  финансовом центре Тосканы&nbsp;&mdash; Флоренции, и&nbsp;довольствовавшийся заказами, которые ему
+                  давали
+                  провинциальные храмы. Его искусство было эклектичным, и&nbsp;наряду с&nbsp;влиянием отца включало
+                  связь с
+                  искусством Перуджино, Ридольфо Гирландайо, Лоренцо ди&nbsp;Креди, Фра Бартоломео и&nbsp;др.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="catalog__painter-info  js-tab-content" data-target="bramantino">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="bramantino">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Брамантино
+                    </cite>
+
+                    <div class="after__date">
+                      1465&nbsp;г. &mdash;&nbsp;1530&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Бартоломео Суарди родился около 1465 года в&nbsp;Милане[1] (по&nbsp;другой версии&nbsp;&mdash;
+                  в&nbsp;Бергамо[2]).
+                  В&nbsp;Милане, где &laquo;царил&raquo; Леонардо, Брамантино создал яркий, острый стиль, хотя
+                  и&nbsp;страдавший иногда
+                  недостатками в&nbsp;передаче перспективы и&nbsp;неточностью изображения архитектурных элементов.
+                  Брамантино сформировался под влиянием Бутиноне и&nbsp;графического стиля Падуи и&nbsp;Феррары.
+                  Впоследствии он
+                  многому научился у&nbsp;Браманте, у&nbsp;которого долгое время состоял помощником (чем
+                  и&nbsp;объясняется его
+                  прозвище Брамантино&nbsp;&mdash; букв. &quot;Маленький Браманте&quot;[3]) и&nbsp;у&nbsp;которого
+                  перенял любовь к&nbsp;монументальным
+                  формам и&nbsp;драматизму. Некоторые искусствоведы полагают, что Браманте поручал Брамантино, как
+                  живописцу, осуществление своих замыслов[3].
+                  В&nbsp;зрелый период своего творчества, когда были выполнены шпалеры для созданного им&nbsp;мавзолея
+                  Тривульцио, художник придерживался строгой композиционной уравновешенности.
+                  Переехав в&nbsp;Рим в&nbsp;1508&nbsp;году, где он&nbsp;расписывал лоджии в&nbsp;Ватикане, Брамантино
+                  начал работать в&nbsp;новой
+                  манере, близкой к&nbsp;маньеристскому стилю.
+                  Брамантино умер в&nbsp;1530&nbsp;году.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="catalog__painter-info  js-tab-content" data-target="brea">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="brea">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Бреа, Людовико
+                    </cite>
+
+                    <div class="after__date">
+                      1450&nbsp;г. &mdash;&nbsp;1523&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Бреа родился в&nbsp;происходившей из&nbsp;Монтальто-Лигуре семье бондарей в&nbsp;Ницце, являвшейся
+                  в&nbsp;то&nbsp;время
+                  частью Генуэзской республики.
+                  Бреа был в&nbsp;основном клерикальным художником, и&nbsp;наиболее значительные его работы представляют
+                  собой
+                  алтарные картины. Первая значимая работа художника представляет собой роспись францисканского
+                  монастыря в&nbsp;Симье (современная Ницца). Прочие работы художника сосредоточены прибрежных
+                  поселениях
+                  между Монако и&nbsp;Ментоной, между Таджей и&nbsp;Империей и&nbsp;между Савоной и&nbsp;Генуей.
+                  Одним из&nbsp;учеников Людовико Бреа был Террамо Пьяджо.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="catalog__painter-info  js-tab-content" data-target="biaggio">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="biaggio">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Бьяджо д&rsquo;Антонио Туччи
+                    </cite>
+
+                    <div class="after__date">
+                      1446&nbsp;г. &mdash;&nbsp;1516&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Родился во&nbsp;Флоренции.
+                  Последнюю четверть&nbsp;XV века работал в&nbsp;Фаэнце, но&nbsp;в&nbsp;его стиле мало элементов
+                  флорентийского стиля &mdash;
+                  прослеживается влияние ранней нидерландскрй живописи.
+                  Сотрудничал с&nbsp;другими художниками над фресками Сикстинской капеллы:
+                  вместе с&nbsp;Козимо Росселли&nbsp;&mdash; Тайная вечеря.
+                  вероятный автор (соавтор) фрески Переход через Красное море.
+                  Также рисовал панели для сундуков кассоне.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="catalog__painter-info  js-tab-content" data-target="vecchietta">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="vecchietta">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Веккьетта
+                    </cite>
+
+                    <div class="after__date">
+                      1410&nbsp;г. &mdash;&nbsp;1480&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Веккьетта (итал. Il&nbsp;Vecchietta&nbsp;&mdash; &laquo;Старушонка&raquo;), настоящее имя Лоренцо
+                  ди&nbsp;Пьетро, итал. Lorenzo di
+                  Pietro; ок.&nbsp;1410, Сиена&nbsp;&mdash; 6&nbsp;июня 1480, Сиена)&nbsp;&mdash; итальянский художник,
+                  скульптор, архитектор и
+                  ювелир. Сиенская школа.
+                  О&nbsp;Веккьетте сообщает в&nbsp;своих &laquo;Жизнеописаниях&raquo; Джорджо Вазари и&nbsp;описывает
+                  его как человека мрачного и
+                  нелюдимого, вечно погружённого в&nbsp;раздумья, и&nbsp;потому прожившего недолго. Позднейшие
+                  исследователи
+                  пытались имя этого художника увязать с&nbsp;какими-либо архивными данными. Сейчас общепризнанной
+                  считается версия, что описанный Вазари Веккьетта&nbsp;&mdash; это Лоренцо ди&nbsp;Пьетро
+                  ди&nbsp;Джованни, который был
+                  крещён в&nbsp;Сиене в&nbsp;1410&nbsp;году. Имя этого человека появляется в&nbsp;документах в&nbsp;1428
+                  году среди членов
+                  гильдии художников Сиены.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="catalog__painter-info  js-tab-content" data-target="andrea">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="andrea">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Андреа Верроккьо
+                    </cite>
+
+                    <div class="after__date">
+                      1435&nbsp;г. &mdash;&nbsp;1488&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Андреа дель Верроккьо родился и&nbsp;работал во&nbsp;Флоренции. Своё имя (del Verrocchio&nbsp;&mdash;
+                  &laquo;от&nbsp;Верроккьо&raquo;), он
+                  получил от&nbsp;своего учителя, ювелира Верроккьо. Специализировался на&nbsp;скульптуре, но&nbsp;также
+                  обращался и
+                  к&nbsp;живописи.
+                  В&nbsp;эпоху Раннего Возрождения художники работали почти исключительно по&nbsp;заказам, поэтому
+                  в&nbsp;то&nbsp;время
+                  была велика роль меценатов. Эта практика особенно распространилась во&nbsp;Флоренции XV&nbsp;века, где
+                  художественные мастерские осуществляли любые заказы покровителей&nbsp;&mdash; от&nbsp;росписи посуды
+                  до
+                  архитектурных проектов. Верроккьо считался непревзойденным декоратором и&nbsp;режиссёром придворных
+                  празднеств.
+                  В&nbsp;1465 году он&nbsp;создал надгробие Козимо Медичи (1389&ndash;1464). В&nbsp;1467&ndash;1483
+                  годах работал над
+                  скульптурной композицией &laquo;Уверение Фомы (Верроккьо)&raquo; для церкви Орсанмикеле.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="catalog__painter-info  js-tab-content" data-target="benozzo">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="benozzo">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Беноццо Гоццоли
+                    </cite>
+
+                    <div class="after__date">
+                      1420&nbsp;г. &mdash;&nbsp;1497&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Беноццо Гоццоли родился в&nbsp;1420 году во&nbsp;Флоренции, в&nbsp;семье портного. Настоящее имя
+                  художника &mdash;
+                  Беноццо ди&nbsp;Лезе ди&nbsp;Сандро (фамилия Гоццоли впервые появляется лишь во&nbsp;втором издании
+                  &laquo;Жизнеописаний&raquo;
+                  Вазари)[1].
+                  Период становления Гоццоли как художника пришёлся на&nbsp;годы, в&nbsp;которые флорентийское искусство
+                  переживало настоящий расцвет. В&nbsp;1430&ndash;1440 годы во&nbsp;Флоренции работали Фра Беато
+                  Анджелико, Филиппо
+                  Липпи, Паоло Учелло, Доменико Венециано, Пьеро делла Франческа[2]. Согласно Джорджо Вазари, учителем
+                  Гоццоли был Фра Анджелико, однако многие историки искусства оспаривают этот факт[3]. Несомненно,
+                  однако, что в&nbsp;1439&ndash;1440 и&nbsp;в&nbsp;1443&ndash;1444 годы Гоццоли работал совместно
+                  с&nbsp;Фра Анжелико над фресками
+                  монастыря Сан-Марко[3].
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="catalog__painter-info  js-tab-content" data-target="granacci">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="granacci">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Граначчи, Франческо
+                    </cite>
+
+                    <div class="after__date">
+                      1469&nbsp;г. &mdash;&nbsp;1543&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Франческо Граначчи учился в&nbsp;мастерской Доменико Гирландайо, где также начинал работать молодой
+                  Микеланджело, который стал его другом и&nbsp;с&nbsp;которым он&nbsp;поступил в&nbsp;школу Лоренцо
+                  Великолепного в&nbsp;саду
+                  Сан-Марко.
+                  По&nbsp;заказу Лоренцо Медичи Великолепного Граначчи участвовал в&nbsp;росписи церкви Сан-Марко
+                  во&nbsp;Флоренции.
+                  Позднее работал с&nbsp;Леонардо да&nbsp;Винчи, Микеланджело и&nbsp;Рафаэлем. В&nbsp;1508 году Граначчи
+                  отправился в&nbsp;Рим,
+                  где вместе с&nbsp;другими художниками помогал Микеланджело переносить кальки (подготовительные
+                  рисунки)
+                  для росписи на&nbsp;потолок Сикстинской капеллы в&nbsp;Ватикане. Вернувшись во&nbsp;Флоренцию,
+                  он&nbsp;написал образ
+                  Мадонны с&nbsp;Младенцем между святыми Франциском и&nbsp;Иеронимом для монастыря августинцев Сан-Галло
+                  (San
+                  Gallo; ныне в&nbsp;Галерее Академии), Мадонну делла Чинтола для конвенто Сан-Бенедетто. В&nbsp;1515
+                  году он
+                  участвовал в&nbsp;оформлении апартаментов для визита папы Льва X&nbsp;во Флоренцию.
+                  Скончался художник во&nbsp;Флоренции, похоронен в&nbsp;церкви Сант-Амброджо во&nbsp;Флоренции[2].
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="catalog__painter-info  js-tab-content" data-target="gregorio">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="gregorio">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Грегорио ди&nbsp;Чекко
+                    </cite>
+
+                    <div class="after__date">
+                      1418&nbsp;г. &mdash;&nbsp;1424&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  О&nbsp;Грегорио очень мало сведений. Известно, что он&nbsp;был приёмным сыном и&nbsp;учеником Таддео
+                  ди&nbsp;Бартоло,
+                  работал в&nbsp;его мастерской, а&nbsp;единственным достоверным произведением является алтарь,
+                  написанный им&nbsp;в
+                  1423 году для капеллы Франческо Толомеи в&nbsp;сиенском соборе, на&nbsp;котором стоит его подпись.
+                  В&nbsp;начале&nbsp;XX
+                  века его путали с&nbsp;упоминаемым в&nbsp;документах Джорджо ди&nbsp;Кеко ди&nbsp;Лука (Giorgio
+                  di&nbsp;Checo di&nbsp;Lucha),
+                  поскольку Миланези в&nbsp;1853 году неправильно транскрибировал имя Грегорио.
+                  Впервые его имя упоминается в&nbsp;1418&nbsp;году, когда художник получил 4&nbsp;лиры за&nbsp;роспись
+                  таволетта &mdash;
+                  книжной обложки для отчётов Биккерны, финансового ведомства Сиены (обложка не&nbsp;сохранилась).
+                  В&nbsp;1420
+                  году совместно с&nbsp;Таддео ди&nbsp;Бартоло, он&nbsp;работал над алтарем для капеллы Марескотти
+                  в&nbsp;сиенской церкви
+                  Сан Агостино. На&nbsp;алтаре стояла его подпись, однако сама произведение до&nbsp;нашего времени
+                  не&nbsp;дошло.
+                  Известно, что этот алтарь состоял из&nbsp;статуи Мадонны дель Магнификат, созданной скульптором
+                  Джованни
+                  ди&nbsp;Турино (сохранилась), и&nbsp;картин, написанных Грегорио ди&nbsp;Чекко. В&nbsp;том&nbsp;же
+                  1420 году Грегорио написал
+                  фреску в&nbsp;церкви деи Серви кон ле&nbsp;Аниме и&nbsp;&laquo;Мадонну с&nbsp;младенцем&raquo; для
+                  алтаря в&nbsp;церкви Санта Кьяра.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="catalog__painter-info  js-tab-content" data-target="giovanni">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="giovanni">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Джованни да&nbsp;Удине
+                    </cite>
+
+                    <div class="after__date">
+                      1487&nbsp;г. &mdash;&nbsp;1561&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Джованни да&nbsp;Удине (итал. Giovanni da&nbsp;Udine), также Джованни Нанни (Giovanni Nani&nbsp;/
+                  Nanni; 1487,
+                  Удине&nbsp;&mdash; 1561, Рим)&nbsp;&mdash; итальянский живописец, архитектор и&nbsp;декоратор.
+                  Джованни учился сначала у&nbsp;Джованни Мартино (итал. Pellegrino da&nbsp;San Daniele) в&nbsp;Удине,
+                  затем переехал
+                  в&nbsp;Венецию, где стал учеником Джорджоне. В&nbsp;1514 году переехал в&nbsp;Рим, где поступил
+                  в&nbsp;мастерскую
+                  Рафаэля и&nbsp;считался одним из&nbsp;наиболее талантливых его учеников. Джорджо Вазари отмечал его
+                  стремление
+                  к&nbsp;гротеску и&nbsp;большую любовь к&nbsp;изображению природы и&nbsp;натюрморта: растений, животных
+                  и&nbsp;неодушевлённых
+                  предметов. После смерти Рафаэля художник работал по&nbsp;заказам кардинала Джулио Медичи (будущего
+                  папу
+                  Климента VII) по&nbsp;украшению росписями Виллы Мадама вместе с&nbsp;другими учениками Рафаэля,
+                  завершив
+                  работы к&nbsp;1525&nbsp;году. По&nbsp;рассказам Дж. Вазари конфликтовал с&nbsp;Джулио Романо.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="catalog__painter-info  js-tab-content" data-target="paolo">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="paolo">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Джованни ди&nbsp;Паоло
+                    </cite>
+
+                    <div class="after__date">
+                      1403&nbsp;г. &mdash;&nbsp;1482&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Сведений о&nbsp;жизни художника сохранилось крайне немного. Джованни ди&nbsp;Паоло родился
+                  в&nbsp;Сиене около 1403
+                  года. Точная дата рождения неизвестна; первый существующий документ, в&nbsp;котором фигурирует его
+                  имя,
+                  датирован 1417 годом[3][4].
+                  По&nbsp;всей видимости, учителем Джованни ди&nbsp;Паоло был Таддео ди&nbsp;Бартоло. Свою творческую
+                  карьеру ди
+                  Паоло начал как художник-миниатюрист[3]. Расцвет его деятельности пришёлся на&nbsp;1440&ndash;1450-е
+                  годы: в
+                  это время художник создаёт самые известные свои произведения[5].
+                  На&nbsp;протяжении всей своей жизни Джованни ди&nbsp;Паоло не&nbsp;покидал свой родной город
+                  и&nbsp;умер в&nbsp;Сиене в&nbsp;1482
+                  году[5].
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="catalog__painter-info  js-tab-content" data-target="giorgione">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="giorgione">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Джорджоне
+                    </cite>
+
+                    <div class="after__date">
+                      1478&nbsp;г. &mdash;&nbsp;1510&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Джорджо Барбарелли да&nbsp;Кастельфранко, более известный как Джорджоне (итал. Giorgio, Zorzi, Zorzo
+                  Barbarelli da&nbsp;Castelfranco, detto Giorgione; 1477/1478, Кастельфранко-Венето&nbsp;&mdash;
+                  17&nbsp;сентября 1510,
+                  Венеция)[3]&nbsp;&mdash; итальянский живописец, представитель венецианской школы; один
+                  из&nbsp;выдающихся мастеров
+                  Высокого Возрождения. Необычайно одарённый художник, он&nbsp;был также поэтом и&nbsp;музыкантом.
+                  Джорджоне
+                  прожил короткую жизнь, скончался в&nbsp;тридцать четыре года, но&nbsp;успел создать особое,
+                  идиллическое
+                  направление в&nbsp;живописи, продолжателем которого, отчасти, стал Тициан Вечеллио.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="catalog__painter-info  js-tab-content" data-target="parentino">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="parentino">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Парентино, Бернардо
+                    </cite>
+
+                    <div class="after__date">
+                      1450&nbsp;г. &mdash;&nbsp;1500&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Родился в&nbsp;городе Паренцо, принадлежащем венецианской республике и&nbsp;находящимся
+                  на&nbsp;побережье
+                  полуострова Истрия. Там&nbsp;же, вероятнее всего, получил начальное образование[3]. Умер в&nbsp;городе
+                  Виченца. Испытал сильное влияние, а&nbsp;возможно и&nbsp;был учеником Андреа Мантеньи. Также художник
+                  известен
+                  под именами Бернардо Паренцано, Бернардо да&nbsp;Паренцо, Бернардино Парентино. Ошибочно
+                  отождествлялся с
+                  августинским монахом Лоренцо[3].
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="catalog__painter-info  js-tab-content" data-target="pesellino">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="pesellino">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Пезеллино
+                    </cite>
+
+                    <div class="after__date">
+                      1422&nbsp;г. &mdash;&nbsp;1457&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Итальянский историк искусства Джорджо Вазари составил небольшую биографию художника, в&nbsp;которой с
+                  восторгом отзывается о&nbsp;его творчестве, но, в&nbsp;то&nbsp;же время, перепутал в&nbsp;ней,
+                  кажется, всё, что только
+                  можно.
+                  Франческо ди&nbsp;Стефано родился в&nbsp;семье Стефано ди&nbsp;Франческо и&nbsp;его супруги Нанны,
+                  которая была старшей
+                  дочерью художника Джулиано д&rsquo;Арриго по&nbsp;прозвищу Пезелло. В&nbsp;1427&nbsp;году, когда
+                  мальчику было всего 5
+                  лет, его отец скончался, и&nbsp;ребёнок переселился к&nbsp;своему деду по&nbsp;материнской
+                  линии&nbsp;&mdash; Джулиано
+                  д&rsquo;Арриго, мастерская которого находились на&nbsp;корсо Адимари во&nbsp;Флоренции (ныне это виа
+                  деи
+                  Кальцайоли). От&nbsp;деда к&nbsp;Франческо перешло и&nbsp;прозвище &laquo;Пезеллино&raquo;
+                  (то&nbsp;есть &laquo;маленький Пезелло&raquo;). В
+                  двадцатилетнем возрасте Франческо Пезеллино женился на&nbsp;Тарсии, дочери некоего Сильвестера
+                  из&nbsp;Роппо,
+                  о&nbsp;чём свидетельствует сохранившийся документ, датированный 22&nbsp;ноября 1442&nbsp;года.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="catalog__painter-info  js-tab-content" data-target="pietro">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="pietro">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Пьетро Перуджино
+                    </cite>
+
+                    <div class="after__date">
+                      1446&nbsp;г. &mdash;&nbsp;1524&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Пьетро Перуджино, Пьетро ди&nbsp;Кристофоро Ваннуччи, Пьетро делла Пьеве (итал. Pietro Perugino,
+                  Pietro
+                  di&nbsp;Cristoforo Vannucci, Pietro della Pieve; 1446, Читта-делла-Пьеве&nbsp;&mdash; 1524,
+                  Перуджа)&nbsp;&mdash; живописец
+                  итальянского Возрождения, представитель умбрийской школы, учитель Рафаэля Санти. Прозвание
+                  &laquo;Пьетро
+                  Перуджийский&raquo; (реже: &laquo;делла Пьеве&raquo;) получил по&nbsp;месту своего рождения.
+                  Не&nbsp;путать с&nbsp;другим художником:
+                  Антонио Франческо Перуццини, также прозванным &laquo;Перуджино&raquo;.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="catalog__painter-info  js-tab-content" data-target="peruzzi">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="peruzzi">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Перуцци, Бальдассаре
+                    </cite>
+
+                    <div class="after__date">
+                      1481&nbsp;г. &mdash;&nbsp;1536&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Родился в&nbsp;небольшом городке близ Сиены. С&nbsp;1503 года работал в&nbsp;Риме. Быстро получил
+                  признание как
+                  архитектор и&nbsp;мастер иллюзорных росписей, создающих эффект продолжения архитектурного
+                  пространства.
+                  Поэтому Перуцци считают создателем римской школы фасадных росписей, в&nbsp;основном гризайлью,
+                  но&nbsp;они не
+                  сохранились до&nbsp;нашего времени. Вначале Перуцци работал вместе с&nbsp;Донато Браманте,
+                  но&nbsp;затем перешёл к
+                  Рафаэлю. Биографы считают автором знаменитого &laquo;Письма Рафаэля&raquo; папе Льву Х&nbsp;&mdash;
+                  введения к
+                  Археологическому плану античного Рима&nbsp;&mdash; именно Перуцци.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="catalog__painter-info  js-tab-content" data-target="pisanello">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="pisanello">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Пизанелло
+                    </cite>
+
+                    <div class="after__date">
+                      1392&nbsp;г. &mdash;&nbsp;1455&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Родился в&nbsp;семье суконщика Пуччо ди&nbsp;Джованни да&nbsp;Черетта. После его смерти вдова Изабета
+                  с&nbsp;сыном
+                  Антонио переехала в&nbsp;свой родной город&nbsp;&mdash; Верону. Первым учителем будущего художника
+                  стал Стефано да
+                  Верона, позднее его наставником и&nbsp;другом стал Джентиле да&nbsp;Фабриано. С&nbsp;да&nbsp;Фабриано
+                  Пизанелло в
+                  1409&ndash;1415 годах в&nbsp;Венеции работал над украшением Зала Большого совета во&nbsp;Дворце Дожей
+                  (оформление
+                  зала погибло при пожаре в&nbsp;1577&nbsp;году). После внезапной смерти Джентиле (1427) Пизанелло
+                  продолжил
+                  начатую им&nbsp;роспись базилики Сан Джованни ин&nbsp;Латерано (не&nbsp;сохранилась). В&nbsp;1420-х
+                  годах работал над
+                  фресками в&nbsp;замке Висконти в&nbsp;Павии&nbsp;&mdash; этот фресковый цикл погиб во&nbsp;время войны
+                  с&nbsp;Францией в&nbsp;1527&nbsp;году.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="catalog__painter-info  js-tab-content" data-target="pinturikkyo">
+
+              <div class="catalog__after after">
+
+                <figure class="after__wrraaper">
+
+                  <img class="after__img" src="img/catalog-other-bgd.jpg" alt="pinturikkyo">
+
+                  <figcaption class="after__about">
+
+                    <cite class="after__name">
+                      Пинтуриккьо
+                    </cite>
+
+                    <div class="after__date">
+                      1454&nbsp;г. &mdash;&nbsp;1513&nbsp;г.
+                    </div>
+
+                  </figcaption>
+
+                </figure>
+
+                <p class="after__desc">
+                  Представитель умбрийской школы кватроченто. Учился у&nbsp;Фьоренцо ди&nbsp;Лоренцо, вместе
+                  с&nbsp;Рафаэлем&nbsp;&mdash; у
+                  Перуджино, которому помогал при создании фресок Сикстинской капеллы Ватикана (1481&ndash;1482),
+                  а&nbsp;по
+                  некоторым данным&nbsp;&mdash; ещё и&nbsp;у&nbsp;Бенедетто Капорали, создателя дворца кардинала
+                  Пассерини, впоследствии
+                  расписанного Синьорелли. Вероятно, испытал влияние и&nbsp;Бенедетто Бонфильи, учителя Перуджино. Став
+                  зрелым мастером, Пинтуриккьо отказался от&nbsp;некоторых принципов Перуджино&nbsp;&mdash;
+                  однообразности и
+                  степенности фигур, единства времени и&nbsp;места,&nbsp;&mdash; что сближает его скорее
+                  с&nbsp;Боттичелли[4].
+                  Работал во&nbsp;многих городах Италии&nbsp;&mdash; Перудже, Риме, Орвието, Сполето, Сиене.
+                  В&nbsp;1481&ndash;1483 годах вместе
+                  с&nbsp;другими художниками помогал Перуджино в&nbsp;росписи Сикстинской капеллы в&nbsp;Ватикане.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- правый контейнер для акардиона с списком -->
+          <!-- размеры контейнера -->
+          <ul class="catalog__accordion accordion js-accordion-container">
+
+            <!-- 1 акардион с именами -->
+            <li class="accordion__question ac js-enabled">
+
+              <button class="accordion__heading ac-trigger">
+
+                <span class="accordion__heading-text">
+
+                  <span class="accordion__heading-text-wrap">C&nbsp;1400 по&nbsp;1499&nbsp;гг.</span>
+
+                </span>
+
+                <svg class="head-icon" width="50" height="50" viewbox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="head-icon-round"
+                    d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                    fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                  <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+                </svg>
+
+              </button>
+
+              <div class="accordion__content ac-panel">
+
+                <div class="accordion__content-wrap">
+
+                  <ul class="accordion__inner-list">
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                        data-path="benedetto" href="#">
+                        <span class="link__text">Бенедетто ди&nbsp;Биндо</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                        data-path="bergognone" href="#">
+                        <span class="link__text">Бергоньоне, Амброджо</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                        data-path="bissolo" href="#">
+                        <span class="link__text">Биссоло, Франческо</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn active"
+                        data-path="boltraffio" href="#">
+                        <span class="link__text">Больтраффио, Джованни</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                        data-path="bonsignori" href="#">
+                        <span class="link__text">Бонсиньори, Франческо</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                        data-path="botticini" href="#">
+                        <span class="link__text">Боттичини, Рафаэлло</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                        data-path="bramantino" href="#">
+                        <span class="link__text">Брамантино</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-path="brea"
+                        href="#">
+                        <span class="link__text">Бреа, Людовико</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                        data-path="biaggio" href="#">
+                        <span class="link__text">Бьяджо д&rsquo;Антонио Туччи</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                        data-path="vecchietta" href="#">
+                        <span class="link__text">Веккьетта</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                        data-path="andrea" href="#">
+                        <span class="link__text">Андреа Верроккьо</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                        data-path="domenico" href="#">
+                        <span class="link__text">Доменико Гирландайо</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                        data-path="benozzo" href="#">
+                        <span class="link__text">Беноццо Гоццоли</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                        data-path="granacci" href="#">
+                        <span class="link__text">Граначчи, Франческо</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                        data-path="gregorio" href="#">
+                        <span class="link__text">Грегорио ди&nbsp;Чекко</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                        data-path="giovanni" href="#">
+                        <span class="link__text">Джованни да&nbsp;Удине</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-path="paolo"
+                        href="#">
+                        <span class="link__text">Джованни ди&nbsp;Паоло</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                        data-path="giorgione" href="#">
+                        <span class="link__text">Джорджоне</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                        data-path="parentino" href="#">
+                        <span class="link__text">Парентино, Бернардо</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                        data-path="pesellino" href="#">
+                        <span class="link__text">Пезеллино</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                        data-path="pietro" href="#">
+                        <span class="link__text">Пьетро Перуджино</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                        data-path="peruzzi" href="#">
+                        <span class="link__text">Перуцци, Бальдассаре</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                        data-path="pisanello" href="#">
+                        <span class="link__text">Пизанелло</span>
+                      </a>
+                    </li>
+
+                    <li class="accordion__item">
+                      <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                        data-path="pinturikkyo" href="#">
+                        <span class="link__text">Пинтуриккьо</span>
+                      </a>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <!-- 2 акардион с именами -->
+            <li class="accordion__question ac js-enabled">
+
+              <button class="accordion__heading ac-trigger">
+
+                <span class="accordion__heading-text">
+
+                  <span class="accordion__heading-text-wrap">C&nbsp;1500 по&nbsp;1599&nbsp;гг.</span>
+
+                </span>
+
+                <svg class="head-icon" width="50" height="50" viewbox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="head-icon-round"
+                    d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                    fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                  <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+                </svg>
+
+              </button>
+
+              <div class="accordion__content ac-panel">
+
+                <div class="accordion__content-wrap accordion__empty-block empty-block">
+
+                  <div class="empty-block__border">
+                    <img class="empty-block__img" src="img/empty-block-img.svg" alt="background color">
+                  </div>
+
+                  <div class="empty-block-wrraper">
+
+                    <h3 class="empty-block__title">
+                      Здесь пока пусто
+                    </h3>
+
+                    <p class="empty-block__desc">
+                      А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                    </p>
+
+                    <a class="empty-block__link" href="#">
+                      В&nbsp;галерею
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="accordion__question ac js-enabled">
+
+              <button class="accordion__heading ac-trigger">
+
+                <span class="accordion__heading-text">
+
+                  <span class="accordion__heading-text-wrap">C&nbsp;1600 по&nbsp;1699&nbsp;гг.</span>
+
+                </span>
+
+                <svg class="head-icon" width="50" height="50" viewbox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="head-icon-round"
+                    d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                    fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                  <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+                </svg>
+
+              </button>
+
+              <div class="accordion__content ac-panel">
+
+                <div class="accordion__content-wrap accordion__empty-block empty-block">
+
+                  <div class="empty-block__border">
+                    <img class="empty-block__img" src="img/empty-block-img.svg" alt="background color">
+                  </div>
+
+                  <div class="empty-block-wrraper">
+
+                    <h3 class="empty-block__title">
+                      Здесь пока пусто
+                    </h3>
+
+                    <p class="empty-block__desc">
+                      А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                    </p>
+
+                    <a class="empty-block__link" href="#">
+                      В&nbsp;галерею
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="accordion__question ac js-enabled">
+
+              <button class="accordion__heading ac-trigger">
+
+                <span class="accordion__heading-text">
+
+                  <span class="accordion__heading-text-wrap">C&nbsp;1700 по&nbsp;1799&nbsp;гг.</span>
+
+                </span>
+
+                <svg class="head-icon" width="50" height="50" viewbox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="head-icon-round"
+                    d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                    fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                  <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+                </svg>
+
+              </button>
+
+              <div class="accordion__content ac-panel">
+
+                <div class="accordion__content-wrap accordion__empty-block empty-block">
+
+                  <div class="empty-block__border">
+                    <img class="empty-block__img" src="img/empty-block-img.svg" alt="background color">
+                  </div>
+
+                  <div class="empty-block-wrraper">
+
+                    <h3 class="empty-block__title">
+                      Здесь пока пусто
+                    </h3>
+
+                    <p class="empty-block__desc">
+                      А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                    </p>
+
+                    <a class="empty-block__link" href="#">
+                      В&nbsp;галерею
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="accordion__question ac js-enabled">
+
+              <button class="accordion__heading ac-trigger">
+
+                <span class="accordion__heading-text">
+
+                  <span class="accordion__heading-text-wrap">C&nbsp;1800 по&nbsp;1899&nbsp;гг.</span>
+
+                </span>
+
+                <svg class="head-icon" width="50" height="50" viewbox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="head-icon-round"
+                    d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                    fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                  <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+                </svg>
+
+              </button>
+
+              <div class="accordion__content ac-panel">
+
+                <div class="accordion__content-wrap accordion__empty-block empty-block">
+
+                  <div class="empty-block__border">
+                    <img class="empty-block__img" src="img/empty-block-img.svg" alt="background color">
+                  </div>
+
+                  <div class="empty-block-wrraper">
+
+                    <h3 class="empty-block__title">
+                      Здесь пока пусто
+                    </h3>
+
+                    <p class="empty-block__desc">
+                      А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                    </p>
+
+                    <a class="empty-block__link" href="#">
+                      В&nbsp;галерею
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="accordion__question ac js-enabled">
+
+              <button class="accordion__heading ac-trigger">
+
+                <span class="accordion__heading-text">
+
+                  <span class="accordion__heading-text-wrap">C&nbsp;1900 по&nbsp;1999&nbsp;гг.</span>
+
+                </span>
+
+                <svg class="head-icon" width="50" height="50" viewbox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="head-icon-round"
+                    d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                    fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                  <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+                </svg>
+
+              </button>
+
+              <div class="accordion__content ac-panel">
+
+                <div class="accordion__content-wrap accordion__empty-block empty-block">
+
+                  <div class="empty-block__border">
+                    <img class="empty-block__img" src="img/empty-block-img.svg" alt="background color">
+                  </div>
+
+                  <div class="empty-block-wrraper">
+
+                    <h3 class="empty-block__title">
+                      Здесь пока пусто
+                    </h3>
+
+                    <p class="empty-block__desc">
+                      А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                    </p>
+
+                    <a class="empty-block__link" href="#">
+                      В&nbsp;галерею
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="accordion__question ac js-enabled">
+
+              <button class="accordion__heading ac-trigger">
+
+                <span class="accordion__heading-text">
+
+                  <span class="accordion__heading-text-wrap">C&nbsp;2000&nbsp;г.</span>
+
+                </span>
+
+                <svg class="head-icon" width="50" height="50" viewbox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="head-icon-round"
+                    d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                    fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                  <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+                </svg>
+
+              </button>
+
+              <div class="accordion__content ac-panel">
+
+                <div class="accordion__content-wrap accordion__empty-block empty-block">
+
+                  <div class="empty-block__border">
+                    <img class="empty-block__img" src="img/empty-block-img.svg" alt="background color">
+                  </div>
+
+                  <div class="empty-block-wrraper">
+
+                    <h3 class="empty-block__title">
+                      Здесь пока пусто
+                    </h3>
+
+                    <p class="empty-block__desc">
+                      А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                    </p>
+
+                    <a class="empty-block__link" href="#">
+                      В&nbsp;галерею
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="developments" class="developments">
+
+      <div class="developments__container container">
+
+        <h2 class="developments__title">
+          События
+        </h2>
+
+        <button class="developments__btn btn-den" tabindex="0" aria-label="К предыдущему слайду"></button>
+
+        <div class="swipers swiper-container developments__slides">
+
+          <div class="swiper-wrapper developments__swiper">
+
+            <!-- 1 cлайд -->
+            <div class="swiper-slide developments__wrraper">
+
+              <img class="developments__img" src="img/developments-bgd-1.jpg" alt="slide-developments-1">
+
+              <div class="developments__content">
+
+                <p class="developments__desc">
+                  Музей им. Щусева <br> с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля
+                </p>
+
+                <h3 class="developments__subtitle">
+                  Книжная гравюра в&nbsp;живом восприятии
+                </h3>
+
+                <p class="developments__description">
+                  Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии,
+                  которую
+                  продолжили его брат Давид и&nbsp;сын Ридольфо
+                </p>
+
+                <button class="developments__button">
+                  Подробнее
+                </button>
+
+              </div>
+
+            </div>
+
+            <div class="swiper-slide developments__wrraper">
+
+              <img class="developments__img" src="img/developments-bgd-2.jpg" alt="slide-developments-2">
+
+              <div class="developments__content">
+
+                <p class="developments__desc">
+                  ММОМА <br> 24&nbsp;марта 19:00
+                </p>
+
+                <h3 class="developments__subtitle">
+                  Открытая дискуссия&quot;. Дмитрий Петров и&nbsp;Сергей Ильин.
+                </h3>
+
+                <p class="developments__description">
+                  Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого
+                  факта
+                </p>
+
+                <button class="developments__button">
+                  Подробнее
+                </button>
+
+              </div>
+
+            </div>
+
+            <div class="swiper-slide developments__wrraper">
+
+              <img class="developments__img" src="img/developments-bgd-3.jpg" alt="slide-developments-3">
+
+              <div class="developments__content">
+
+                <p class="developments__desc">
+                  Еврейский музей <br>
+                  с&nbsp;31&nbsp;марта по&nbsp;21&nbsp;апреля
+                </p>
+
+                <h3 class="developments__subtitle">
+                  Выставка &laquo;Формация 2020&raquo;
+                </h3>
+
+                <p class="developments__description">
+                  Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную
+                  роль
+                  в&nbsp;формировании глубокомысленных рассуждений
+                </p>
+
+                <button class="developments__button">
+                  Подробнее
+                </button>
+
+              </div>
+
+            </div>
+
+            <div class="swiper-slide developments__wrraper">
+
+              <img class="developments__img" src="img/developments-bgd-4.jpg" alt="slide-developments-4">
+
+              <div class="developments__content">
+
+                <p class="developments__desc">
+                  ММАМ <br>
+                  с&nbsp;8&nbsp;апреля по&nbsp;20&nbsp;мая
+                </p>
+
+                <h3 class="developments__subtitle">
+                  Джон Винзор. Фотографии из&nbsp;серии &laquo;Метафора&raquo;
+                </h3>
+
+                <p class="developments__description">
+                  Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии,
+                  которую
+                  продолжили его брат Давид и&nbsp;сын Ридольфо
+                </p>
+
+                <button class="developments__button">
+                  Подробнее
+                </button>
+
+              </div>
+
+            </div>
+
+            <div class="swiper-slide developments__wrraper">
+
+              <img class="developments__img" src="img/developments-bgd-5.jpg" alt="slide-developments-5">
+
+              <div class="developments__content">
+
+                <p class="developments__desc">
+                  Третьяковка на&nbsp;Крымском валу <br>
+                  с&nbsp;30&nbsp;марта по&nbsp;30&nbsp;апреля
+                </p>
+
+                <h3 class="developments__subtitle">
+                  XXIV Международная биеннале молодого искусства
+                </h3>
+
+                <p class="developments__description">
+                  Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования
+                </p>
+
+                <button class="developments__button">
+                  Подробнее
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <button class="developments__btn btn-dev" tabindex="0" aria-label="К следующему слайду"></button>
+
+        <div class="swiper-pagination"></div>
+
+      </div>
+
+    </section>
+
+    <section id="projects" class="projects">
+
+      <div class="projects__container container">
+
+        <div class="projects__content">
+
+          <h2 class="projects__title">
+            Проекты
+          </h2>
+
+          <p class="projects__desc">
+            Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
+            фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые государства смешаны
+            с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает
+            их&nbsp;статус
+            бесполезности.
+            Прежде всего, постоянное информационно-пропагандистское
+            <button data-tippy-content="Tooltip" class="projects__tooltip-btn">
+              <svg class="projects__tooltip" width="16" height="16" viewbox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="projects__tooltip-circle"
+                  d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z"
+                  stroke="#9D5CD0" />
+                <path class="projects__tooltip-i"
+                  d="M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z"
+                  fill="black" />
+              </svg>
+            </button>
+            обеспечение
+            нашей деятельности однозначно фиксирует
+            необходимость экономической целесообразности принимаемых решений. И&nbsp;нет сомнений, что действия
+            представителей
+            оппозиции могут быть рассмотрены
+            <button data-tippy-content="Tooltip" class="projects__tooltip-btn">
+              <svg class="projects__tooltip" width="16" height="16" viewbox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="projects__tooltip-circle"
+                  d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z"
+                  stroke="#9D5CD0" />
+                <path class="projects__tooltip-i"
+                  d="M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z"
+                  fill="black" />
+              </svg>
+            </button>
+            исключительно в&nbsp;разрезе
+            маркетинговых и&nbsp;финансовых
+            <button data-tippy-content="Tooltip" class="projects__tooltip-btn">
+              <svg class="projects__tooltip" width="16" height="16" viewbox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="projects__tooltip-circle"
+                  d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z"
+                  stroke="#9D5CD0" />
+                <path class="projects__tooltip-i"
+                  d="M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z"
+                  fill="black" />
+              </svg>
+            </button>
+            предпосылок.
+            Банальные,
+            но&nbsp;неопровержимые выводы, а&nbsp;также представители современных социальных резервов призывают нас
+            к&nbsp;новым
+            свершениям, которые, в&nbsp;свою очередь, должны быть смешаны с&nbsp;не&nbsp;уникальными данными
+            до&nbsp;степени совершённой
+            неузнаваемости. Подробнее: <a class="projects__link" href="#">blanchard-art.ru/projects</a>
+          </p>
+
+          <h3 class="projects__subtitle">
+            Партнёры проектов:
+          </h3>
+
+        </div>
+
+        <div class="projects__slide">
+
+          <button class="projects-btn btn-prev" tabindex="0" aria-label="К предыдущему слайду"></button>
+
+          <div class="swipers swiper-container projects__slides slides">
+
+            <div class="swiper-wrapper projects__swiper">
+
+              <div class="swiper-slide slides__wrraper">
+                <a class="slides__link" href="#">
+                  <img class="slides__img" src="img/projects-bgd-1.png" alt="partners-logo-1">
+                </a>
+              </div>
+
+              <div class="swiper-slide slides__wrraper">
+                <a class="slides__link" href="#">
+                  <img class="slides__img" src="img/projects-bgd-2.png" alt="partners-logo-2">
+                </a>
+              </div>
+
+              <div class="swiper-slide slides__wrraper">
+                <a class="slides__link" href="#">
+                  <img class="slides__img" src="img/projects-bgd-3.png" alt="partners-logo-3">
+                </a>
+              </div>
+
+              <div class="swiper-slide slides__wrraper">
+                <a class="slides__link" href="#">
+                  <img class="slides__img" src="img/projects-bgd-4.png" alt="partners-logo-4">
+                </a>
+              </div>
+
+              <div class="swiper-slide slides__wrraper">
+                <a class="slides__link" href="#">
+                  <img class="slides__img" src="img/projects-bgd-5.png" alt="partners-logo-5">
+                </a>
+              </div>
+
+              <div class="swiper-slide slides__wrraper">
+                <a class="slides__link" href="#">
+                  <img class="slides__img" src="img/projects-bgd-6.png" alt="partners-logo-6">
+                </a>
+              </div>
+
+              <div class="swiper-slide slides__wrraper">
+                <a class="slides__link" href="#">
+                  <img class="slides__img" src="img/projects-bgd-7.png" alt="partners-logo-7">
+                </a>
+              </div>
+
+              <div class="swiper-slide slides__wrraper">
+                <a class="slides__link" href="#">
+                  <img class="slides__img" src="img/projects-bgd-8.png" alt="partners-logo-8">
+                </a>
+              </div>
+
+              <div class="swiper-slide slides__wrraper">
+                <a class="slides__link" href="#">
+                  <img class="slides__img" src="img/projects-bgd-9.png" alt="partners-logo-9">
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <button class="projects-btn btn-next" tabindex="0" aria-label="К следующему слайду"></button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="contacts" class="contacts">
+
+      <div class="contacts__global">
+
+        <div class="contacts__wrreper container">
+
+          <div class="contacts__container">
+
+            <div class="contacts__content ">
+
+              <h3 class="contacts__title">
+                Шоурум №4
+              </h3>
+
+              <p class="contacts__desc">
+                Леонтьевский переулок, дом 5/1
+              </p>
+
+            </div>
+
+            <form class="form" id="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+
+              <label class="form__name" for="form__name">
+                <input class="form__input-name" id="name" name="name" type="text" required placeholder="Имя*"
+                  data-validate-field="name">
+              </label>
+
+              <label class="form__tel" for="form__tel">
+                <input class="form__input-tel" id="tel" name="tel" type="tel" required placeholder="Телефон*"
+                  data-validate-field="tel" data-validate-rules="phone">
+              </label>
+
+              <label class="form__btn" for="form__btn">
+                <button class="form__button form__button-main">
+                  Заказать обратный звонок
+                </button>
+                <button class="form__button form__button-none">
+                  Заказать
+                </button>
+              </label>
+
+            </form>
+
+            <div class="contacts__network">
+
+              <h3 class="contacts__descr">
+                Связаться в один клик
+              </h3>
+
+              <ul class="contacts__list flex">
+
+                <li class="contacts__item">
+
+                  <a class="contacts__icon" href="#">
+                    <svg class="icon-whatsapp" width="40" height="40" viewbox="0 0 40 40" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_191243_648)">
+                        <path class="icon-whatsapp-bgd"
+                          d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z"
+                          fill="#30BF39" />
+                        <path class="icon-whatsapp-line"
+                          d="M25.875 21.751C25.625 21.626 24.3125 20.876 24.0625 20.8135C23.8125 20.6885 23.625 20.6885 23.4375 20.9385C23.25 21.1885 22.6875 21.8135 22.5625 21.9385C22.375 22.126 22.25 22.126 22 22.001C21.75 21.876 20.875 21.5635 19.875 20.5635C19.125 19.8135 18.5625 18.9385 18.4375 18.626C18.3125 18.376 18.4375 18.1885 18.5625 18.0635C18.6875 17.9385 18.8125 17.751 19 17.626C19.1875 17.501 19.1875 17.376 19.3125 17.1885C19.4375 17.001 19.375 16.876 19.3125 16.6885C19.25 16.501 18.75 15.1885 18.5625 14.626C18.375 14.0635 18.125 14.1885 18 14.126C17.8125 14.126 17.6875 14.0635 17.5 14.0635C17.25 14.0635 16.9375 14.1885 16.75 14.376C16.5 14.626 15.75 15.251 15.75 16.5635C15.75 17.876 16.625 19.251 16.75 19.376C16.875 19.5635 18.5 22.4385 21.1875 23.626C23.875 24.8135 23.875 24.4385 24.375 24.4385C24.875 24.4385 26 23.8135 26.25 23.251C26.5 22.626 26.5 22.0635 26.4375 22.001C26.3125 22.001 26.125 21.9385 25.875 21.751ZM20.875 28.1885C19.125 28.1885 17.5 27.6885 16.0625 26.751L12.6875 27.8135L13.8125 24.5635C12.75 23.0635 12.125 21.251 12.125 19.376C12.125 14.501 16.0625 10.5635 20.9375 10.5635C25.8125 10.5635 29.6875 14.501 29.6875 19.376C29.6875 24.251 25.75 28.1885 20.875 28.1885ZM20.875 8.81348C15.0625 8.81348 10.3125 13.5635 10.3125 19.376C10.3125 21.3135 10.8125 23.1885 11.8125 24.8135L9.875 30.501L15.75 28.626C17.3125 29.501 19.0625 29.9385 20.875 29.9385C26.6875 29.9385 31.4375 25.1885 31.4375 19.376C31.4375 13.5635 26.75 8.81348 20.875 8.81348Z"
+                          fill="white" />
+                      </g>
+                    </svg>
+                  </a>
+
+                </li>
+
+                <li class="contacts__item">
+
+                  <a class="contacts__icon" href="#">
+                    <svg class="icon-telegram" width="40" height="40" viewbox="0 0 40 40" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path class="icon-telegram-bgd"
+                        d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"
+                        fill="#26A5E4" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" class="icon-telegram-line"
+                        d="M9.05321 19.7889L20.7168 14.7649C26.2711 12.4547 27.4251 12.0534 28.1774 12.0402C28.3429 12.0373 28.7128 12.0783 28.9524 12.2727C29.1548 12.4369 29.2104 12.6587 29.2371 12.8143C29.2637 12.9699 29.2969 13.3246 29.2705 13.6017C28.9695 16.7641 27.6671 24.4386 27.0046 27.9806C26.7242 29.4794 26.1726 29.9819 25.6378 30.0311C24.4763 30.138 23.5944 29.2635 22.4694 28.5261L18.0061 25.528C16.0314 24.2268 17.3115 23.5116 18.4369 22.3428C18.7314 22.0368 23.8487 17.3823 23.9477 16.96C23.9597 16.9072 23.9716 16.7104 23.8547 16.6064C23.7377 16.5024 23.565 16.5384 23.4405 16.5663C23.264 16.6064 20.452 18.465 15.0044 22.1423C14.2062 22.6904 13.4832 22.9575 12.8355 22.9435C12.1214 22.9281 10.7478 22.5397 9.72661 22.2078C8.47408 21.8007 7.4786 21.5854 7.56532 20.8939C7.61044 20.5338 8.1064 20.1655 9.05317 19.789L9.05321 19.7889Z"
+                        fill="white" />
+                    </svg>
+                  </a>
+
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="contacts__map">
+        <div class="contacts__map-wrap" id="map"></div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+
+    <div class="footer__container container">
+
+      <a class="footer__logo logo" href="#">
+        <img class="logo__img" src="img/logo.svg" alt="Логотип">
+        <img class="logo__img-desc" src="img/logo-desc.svg" alt="Текстовой логотип">
+      </a>
+
+      <div class="footer__icons">
+
+        <ul class="footer__list">
+
+          <li class="footer__item">
+
+            <a class="footer__icon" href="#">
+              <svg class="footer__icon-vk vk-45" width="45" height="45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="icon-vk-bgd"
+                  d="M22.5 0C10.074 0 0 10.0736 0 22.5C0 34.9264 10.074 45 22.5 45C34.926 45 45 34.9264 45 22.5C45 10.0736 34.926 0 22.5 0ZM33.9132 24.9335C34.9619 25.9577 36.0714 26.9217 37.0128 28.0519C37.4299 28.5519 37.823 29.0688 38.1222 29.6503C38.5495 30.4794 38.1637 31.3886 37.4216 31.4379L32.812 31.4369C31.6215 31.5354 30.6741 31.0553 29.8754 30.2414C29.2378 29.5927 28.6462 28.8999 28.0321 28.2292C27.7812 27.9539 27.517 27.6947 27.2021 27.4907C26.5737 27.0819 26.0277 27.2072 25.6677 27.8636C25.3008 28.5316 25.217 29.2719 25.182 30.0153C25.1319 31.1022 24.8041 31.3863 23.7135 31.4374C21.3832 31.5465 19.1721 31.1929 17.117 30.0181C15.3041 28.9818 13.901 27.5193 12.6783 25.8634C10.2973 22.6353 8.47381 19.0924 6.8354 15.4478C6.46665 14.627 6.73642 14.1878 7.64194 14.1707C9.14639 14.1417 10.6508 14.1454 12.1553 14.1694C12.7676 14.179 13.1727 14.5294 13.4079 15.1071C14.2209 17.1074 15.2176 19.0105 16.4665 20.7755C16.7994 21.2455 17.1391 21.7142 17.623 22.0461C18.157 22.4125 18.5639 22.2915 18.8158 21.6953C18.9769 21.3164 19.0464 20.9113 19.0814 20.5053C19.2011 19.1145 19.2153 17.7242 19.0082 16.339C18.8793 15.4722 18.3918 14.9124 17.5277 14.7485C17.0876 14.6652 17.152 14.5022 17.3661 14.2508C17.7376 13.8163 18.0856 13.5474 18.7812 13.5474L23.9893 13.5465C24.8101 13.7076 24.9942 14.0759 25.1056 14.9027L25.1102 20.6903C25.1006 21.0103 25.2709 21.9586 25.8454 22.1681C26.3058 22.32 26.6096 21.9508 26.8849 21.6594C28.1339 20.334 29.0237 18.7697 29.8206 17.1506C30.1723 16.4366 30.4757 15.6978 30.7703 14.9575C30.9895 14.4101 31.3301 14.1408 31.9479 14.15L36.9631 14.156C37.1108 14.156 37.2609 14.1574 37.4073 14.1827C38.2525 14.3273 38.4841 14.6909 38.2226 15.5154C37.811 16.8109 37.0114 17.89 36.2297 18.9718C35.3919 20.1301 34.4983 21.2478 33.6687 22.4111C32.9064 23.4746 32.9667 24.01 33.9132 24.9335Z"
+                  fill="#CACACA" />
+              </svg>
+              <svg class="footer__icon-vk vk-60" viewbox="0 0 60 60" width="60" height="60" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="icon-vk-bgd"
+                  d="M30 0C13.432 0 0 13.4314 0 30C0 46.5686 13.432 60 30 60C46.568 60 60 46.5686 60 30C60 13.4314 46.568 0 30 0ZM45.2176 33.2446C46.6159 34.6103 48.0951 35.8957 49.3504 37.4026C49.9065 38.0692 50.4307 38.7585 50.8297 39.5337C51.3993 40.6392 50.8849 41.8515 49.8954 41.9171L43.7494 41.9159C42.162 42.0473 40.8988 41.4071 39.8339 40.3218C38.9837 39.457 38.195 38.5332 37.3762 37.6389C37.0416 37.2718 36.6893 36.9262 36.2695 36.6543C35.4316 36.1093 34.7036 36.2762 34.2236 37.1515C33.7344 38.0421 33.6227 39.0292 33.5761 40.0205C33.5092 41.4697 33.0721 41.8484 31.618 41.9165C28.5109 42.062 25.5628 41.5906 22.8227 40.0241C20.4055 38.6425 18.5346 36.6924 16.9043 34.4845C13.7297 30.1805 11.2984 25.4566 9.11386 20.597C8.6222 19.5026 8.98189 18.917 10.1893 18.8943C12.1952 18.8557 14.2011 18.8606 16.2071 18.8925C17.0234 18.9054 17.5636 19.3725 17.8772 20.1428C18.9612 22.8098 20.2901 25.3473 21.9554 27.7007C22.3992 28.3274 22.8522 28.9522 23.4973 29.3948C24.2093 29.8834 24.7519 29.7219 25.0877 28.9271C25.3025 28.4219 25.3952 27.8817 25.4418 27.3404C25.6014 25.486 25.6205 23.6323 25.3442 21.7854C25.1724 20.6296 24.5224 19.8832 23.3702 19.6647C22.7834 19.5536 22.8694 19.3363 23.1548 19.0011C23.6501 18.4217 24.1142 18.0632 25.0416 18.0632L31.9857 18.062C33.0801 18.2768 33.3256 18.7679 33.4742 19.8703L33.4803 27.5871C33.4674 28.0137 33.6945 29.2782 34.4606 29.5574C35.0744 29.76 35.4795 29.2677 35.8465 28.8792C37.5118 27.112 38.6983 25.0263 39.7608 22.8675C40.2298 21.9155 40.6343 20.9303 41.0271 19.9433C41.3193 19.2135 41.7735 18.8544 42.5972 18.8667L49.2841 18.8747C49.4811 18.8747 49.6812 18.8765 49.8764 18.9103C51.0034 19.103 51.3121 19.5879 50.9635 20.6873C50.4147 22.4145 49.3485 23.8533 48.3063 25.2958C47.1892 26.8401 45.9977 28.3304 44.8917 29.8815C43.8752 31.2994 43.9556 32.0133 45.2176 33.2446Z"
+                  fill="#CACACA" />
+              </svg>
+            </a>
+
+          </li>
+
+          <li class="footer__item">
+
+            <a class="footer__icon" href="#">
+              <svg class="footer__icon-od od-45" width="45" height="45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="icon-od-head"
+                  d="M19.279 14.9859C19.279 16.8409 20.7828 18.3449 22.6379 18.3449C24.4929 18.3449 25.9967 16.8409 25.9967 14.9859C25.9967 13.1309 24.4929 11.6271 22.6379 11.6271C20.7828 11.6271 19.279 13.1309 19.279 14.9859Z"
+                  fill="#CACACA" />
+                <path fill-rule="evenodd" clip-rule="evenodd" class="icon-od-body"
+                  d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45ZM14.5125 14.9858C14.5125 10.4984 18.1503 6.86047 22.6379 6.86047C27.1254 6.86047 30.7632 10.4984 30.7632 14.9858C30.7632 19.4734 27.1254 23.1115 22.6379 23.1115C18.1503 23.1115 14.5125 19.4734 14.5125 14.9858ZM30.8117 27.291C30.7086 27.3737 28.7593 28.9142 25.5064 29.5769L30.4165 34.4432C31.28 35.3053 31.2811 36.7042 30.419 37.5677C29.5569 38.431 28.1583 38.4324 27.2945 37.5701L22.5276 32.928L18.1979 37.5402C17.7644 37.9899 17.1862 38.216 16.6074 38.216C16.0553 38.216 15.5027 38.0106 15.074 37.5972C14.1956 36.7502 14.1701 35.3516 15.0171 34.4733L19.6777 29.6025C16.3336 28.9555 14.3039 27.3749 14.1993 27.291C13.2475 26.5277 13.0946 25.1372 13.8579 24.1852C14.6212 23.2334 16.0115 23.0805 16.9636 23.8437C16.9837 23.86 19.1067 25.4549 22.5275 25.4572C25.9483 25.4549 28.0273 23.86 28.0474 23.8437C28.9995 23.0805 30.3899 23.2334 31.1531 24.1852C31.9165 25.1372 31.7636 26.5277 30.8117 27.291Z"
+                  fill="#CACACA" />
+              </svg>
+              <svg class="footer__icon-od od-60" viewbox="0 0 60 60" width="60" height="60" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="icon-od-head"
+                  d="M25.7054 19.9812C25.7054 22.4546 27.7105 24.4598 30.1838 24.4598C32.6572 24.4598 34.6623 22.4546 34.6623 19.9812C34.6623 17.5079 32.6572 15.5028 30.1838 15.5028C27.7105 15.5028 25.7054 17.5079 25.7054 19.9812Z"
+                  fill="#CACACA" />
+                <path fill-rule="evenodd" clip-rule="evenodd" class="icon-od-body"
+                  d="M30 60C46.5686 60 60 46.5685 60 30C60 13.4315 46.5686 0 30 0C13.4314 0 0 13.4315 0 30C0 46.5685 13.4314 60 30 60ZM19.35 19.9811C19.35 13.9978 24.2004 9.14729 30.1838 9.14729C36.1673 9.14729 41.0176 13.9978 41.0176 19.9811C41.0176 25.9645 36.1673 30.8154 30.1838 30.8154C24.2004 30.8154 19.35 25.9645 19.35 19.9811ZM41.0823 36.3881C40.9448 36.4983 38.3457 38.5522 34.0085 39.4358L40.5554 45.9243C41.7067 47.0738 41.7081 48.9389 40.5586 50.0902C39.4091 51.2414 37.5444 51.2432 36.3927 50.0935L30.0368 43.904L24.2639 50.0536C23.6859 50.6532 22.9149 50.9547 22.1431 50.9547C21.407 50.9547 20.6703 50.6808 20.0986 50.1296C18.9274 49.0003 18.8935 47.1355 20.0228 45.9643L26.2369 39.4701C21.7782 38.6073 19.0718 36.4998 18.9324 36.3881C17.6633 35.3702 17.4594 33.5163 18.4772 32.247C19.4949 30.9778 21.3487 30.7739 22.6182 31.7916C22.645 31.8133 25.4756 33.9398 30.0366 33.9429C34.5977 33.9398 37.3698 31.8133 37.3966 31.7916C38.666 30.7739 40.5198 30.9778 41.5375 32.247C42.5553 33.5163 42.3515 35.3702 41.0823 36.3881Z"
+                  fill="#CACACA" />
+              </svg>
+
+            </a>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.js"
+    integrity="sha512-rn0CaCtyheymRT43p0ZuFH0SvNriLU5cuJpY2f4IcyLrbHzJdsIF1dygi9oNha1BhHagO8U+h2xRWCosYf9gCg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!-- js scrollbar -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <!-- js swiper -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <!-- js swiper -->
+  <script src="js/choices.min.js"></script> <!-- js select -->
+  <script src="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.js"></script> <!-- js accordion -->
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script> <!-- js tooltip -->
+  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script> <!-- js tooltip -->
+  <script src="js/inputmask.min.js"></script>
+  <script src="js/just-validate.min.js"></script>
+  <script src="./path/to/just-validate.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
