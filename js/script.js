@@ -499,3 +499,34 @@ menuSearch.addEventListener("click", function (events) {
     closeSearch();
   }
 });
+
+// modal window
+
+const bttns = document.querySelectorAll(".gallery__modal");
+const modalOverlay = document.querySelector(".modal-overlay");
+const modals = document.querySelectorAll(".modal");
+const btnnsClose = document.querySelector(".modal__btn");
+const btnnsCloseMob = document.querySelector(".modal__btn-mob");
+
+bttns.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    let path = e.currentTarget.getAttribute("data-path");
+
+    modals.forEach((el) => {
+      el.classList.remove("modal--visible");
+    });
+
+    document
+      .querySelector(`[data-target="${path}"]`)
+      .classList.add("modal--visible");
+    modalOverlay.classList.add("modal-overlay--visible");
+  });
+});
+
+btnnsClose.addEventListener("click", () => {
+  modalOverlay.classList.remove("modal-overlay--visible");
+});
+
+btnnsCloseMob.addEventListener("click", () => {
+  modalOverlay.classList.remove("modal-overlay--visible");
+});
