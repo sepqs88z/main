@@ -536,7 +536,7 @@ body {
 /* высота видимости контента
 + отступ от меню до скролла */
 .dropdown__simplebar {
-  height: 220px;
+  max-height: 220px;
   padding-right: 20px;
 }
 
@@ -3721,6 +3721,6 @@ input[type="search" i]::-webkit-search-cancel-button {
 
   .empty-block__desc,
   .empty-block__link {
-    font-style: 12px;
+    font-size: 12px;
   }
 }
