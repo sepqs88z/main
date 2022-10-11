@@ -3714,4 +3714,13 @@ input[type="search" i]::-webkit-search-cancel-button {
   .footer__logo .logo__img {
     margin-bottom: 6px;
   }
+
+  .empty-block__title {
+    font-size: 15px;
+  }
+
+  .empty-block__desc,
+  .empty-block__link {
+    font-style: 12px;
+  }
 }
