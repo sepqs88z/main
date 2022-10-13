@@ -1366,6 +1366,7 @@ input[type="search" i]::-webkit-search-cancel-button {
 }
 
 .after__img {
+  width: 100%;
   margin-bottom: 28px;
 }
 
@@ -1868,6 +1869,7 @@ input[type="search" i]::-webkit-search-cancel-button {
 }
 
 .developments__btn:disabled {
+  display: none;
   background-color: var(--light-gray);
   border: 1px solid transparent;
   pointer-events: none;
